@@ -208,25 +208,14 @@ body {
     justify-content: center;
 }
 
-.homepage-content-info a {
-    text-decoration: none;
-    color: white;
-    transition-duration: 0.1s;
-}
-
-.homepage-content-info a:hover {
-    color: #7c02e7;
-}
-
-.homepage-date-text {
-    font-size: 1.1rem;
-    padding-bottom: 20px;
+.homepage-text {
+    margin-bottom: 15px;
 }
 
 .homepage-headers {
     font-size: 2rem;
     font-weight: 500;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .homepage-links {
@@ -256,7 +245,7 @@ body {
 .homepage-images {
     width: 90%;
     max-width: 500px;
-    padding: 5px 0 10px 0;
+    padding: 5px 0 20px 0;
 }
 
 .homepage-images img {
@@ -479,6 +468,8 @@ footer {
 
 .artist-hero {
     padding: 100px 100px 0 100px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .artists-container {
@@ -493,7 +484,7 @@ footer {
 
 .artist-image-container {
     width: 50%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .artist-image-container img {
@@ -504,7 +495,7 @@ footer {
 
 .artist-info-container {
     width: 50%;
-    max-width: 500px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;

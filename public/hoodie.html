@@ -90,7 +90,7 @@
                         <section aria-labelledby="product-description" class="product-description">
                             <h1 id="product-description">Hoodie</h1>
                             <p class="price" id="price" >£35.00</p>
-                            <p>Sold Out</p>
+                            <p style="color: red; font-weight: 500;">Sold Out</p>
                             <p>Our first clothing drop is a collaboration with Brighton-based graphic designer Rosie Flaherty.</p>
                             <p>Black tee with screen printed front and back designs.</p>
                             <ul>
@@ -104,15 +104,15 @@
                             <label for="quantity">Size:</label>
                             <select id="size" name="size">
                                 <option value="" selected disabled>Select Size</option>
-                                <option value="S" data-product-id="5">S</option>
-                                <option value="M" data-product-id="6">M</option>
-                                <option value="L" data-product-id="7">L</option>
-                                <option value="XL" data-product-id="8">XL</option>
+                                <option value="S" selected disabled data-product-id="5">S</option>
+                                <option value="M" selected disabled data-product-id="6">M</option>
+                                <option value="L" selected disabled data-product-id="7">L</option>
+                                <option value="XL" selected disabled data-product-id="8">XL</option>
                             </select>
                         </div>
                         <div class="quantity-selector">
                             <label for="quantity">Quantity:</label>
-                            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                            <input disabled type="number" id="quantity" name="quantity" min="1" max="10" value="1">
                         </div>
 
                         <button class="add-to-cart-button">Add to Cart</button>
