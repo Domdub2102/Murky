@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>T-Shirt</title>
+
+        <link rel="stylesheet" href="murkystyles.css">
+        <link  href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" rel="stylesheet"/>
+
+
+        <script src="murky.js"></script>
+        <script src="cart.js"></script>
+        <script src="slideshow.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <div id="navbar-container"></div>
+
+        <main>
+
+            <div class="individual-product-page-container">
+
+                <!-- Optionally, a link back to the store listing page -->
+                <div class="link-container">
+                    <a href="/store.html">Store</a>
+                    <p>></p>
+                    <a href="/tshirt.html">T-Shirt</a>
+                </div>
+
+                <!-- create a slideshow to be shown on mobile -->
+
+
+                <div class="individual-product-container">
+
+                    <div class="slideshow-container">
+
+                        <div class="small-product-images">
+                            <img src="/images/tshirt1.jpg" data-small-image-index="1">
+                            <img src="/images/tshirt2.jpg" data-small-image-index="2">
+                            <img src="/images/tshirt3.jpg" data-small-image-index="3">
+                            <img src="/images/tshirt4.jpg" data-small-image-index="4">
+                            <img src="/images/tshirt5.jpg" data-small-image-index="5">
+                        </div>
+
+                        <div class="slideshow">
+
+                            <div class="slideshow-large-image">
+
+                                <div class="slideshow-images">
+                                    <div class="number-text">1 / 5</div>
+                                    <img src="/images/tshirt1.jpg">
+                                </div>
+
+                                <div class="slideshow-images">
+                                    <div class="number-text">2 / 5</div>
+                                    <img src="/images/tshirt2.jpg">
+                                </div>
+
+                                <div class="slideshow-images">
+                                    <div class="number-text">3 / 5</div>
+                                    <img src="/images/tshirt3.jpg">
+                                </div>
+
+                                <div class="slideshow-images">
+                                    <div class="number-text">4 / 5</div>
+                                    <img src="/images/tshirt4.jpg">
+                                </div>
+
+                                <div class="slideshow-images">
+                                    <div class="number-text">5 / 5</div>
+                                    <img src="/images/tshirt5.jpg">
+                                </div>
+
+                                <!-- next/previous buttons -->
+                                <a class="prev">&#10094;</a>
+                                <a class="next">&#10095;</a>
+
+                            </div>
+
+
+                            <!-- dots/circles -->
+                            <div style="text-align: center">
+                                <span class="dot" data-dot-index="1"></span>
+                                <span class="dot" data-dot-index="2"></span>
+                                <span class="dot" data-dot-index="3"></span>
+                                <span class="dot" data-dot-index="4"></span>
+                                <span class="dot" data-dot-index="5"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="individual-product-info-container">
+                        <section aria-labelledby="product-description" class="product-description">
+                            <h1 id="product-description">T-Shirt</h1>
+                            <p class="price" id="price">£25.00</p>
+                            <p>Our first clothing drop is a collaboration with Brighton-based graphic designer Rosie Flaherty.</p>
+                            <p>Black tee with screen printed front and back designs.</p>
+                            <ul>
+                                <li>Heavyweight 240gsm</li>
+                                <li>Oversized fit, slightly rougher cotton</li>
+                                <li>Ethically made</li>
+                                <li>Organic, PETA-approved and Vegan</li>
+                            </ul>
+                            <p>Every order comes with a free Murky sticker.</p>
+                        </section>
+
+                        <div class="size-selector">
+                            <label for="quantity">Size:</label>
+                            <select id="size" name="size">
+                                <option value="" selected disabled>Select Size</option>
+                                <option value="S" data-product-id="1">S</option>
+                                <option value="M" data-product-id="2">M</option>
+                                <option value="L" data-product-id="3">L</option>
+                                <option value="XL" data-product-id="4">XL</option>
+                            </select>
+                            <span>Please select a size</span>
+                        </div>
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                        </div>
+
+                        <button class="add-to-cart-button">Add to Cart</button>
+
+                    </div>
+
+                </div>
+
+
+                <div id="size-guide" class="size-guide-container">
+                    <p>Size guide (measure under your arms and around your chest):</p>
+                    <ul>
+                        <li>S - 36cm</li>
+                        <li>M - 38cm</li>
+                        <li>L - 41cm</li>
+                        <li>XL - 43cm</li>
+                    </ul>
+                    <p>Picture 1: Alex (left) is 190cm and Claire (right) is 165cm, both wearing a L.</p>
+                    <p>Picture 2: Fergus is 170cm wearing a size L.</p>
+                    <p>Picture 3: Jenny is 165cm wearing a size S.</p>
+                    <p>Picture 4: Alex (left) is 190cm and Claire (right) is 165cm, both wearing a L.</p>
+                    <p>Picture 5: Jenny (centre) is 165cm wearing a S, Tara (bottom) is 170cm wearing a M and Claire (top) is 165cm wearing a L.</p>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <p>© Murky Sonics 2024</p>
+
+        </footer>
+
+        <!--Allows usage of Ionicons-->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </body>
+
+</html>
